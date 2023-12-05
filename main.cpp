@@ -4,6 +4,7 @@
 #include "headers/StreamExamples.h"
 #include "headers/ConcatExample.h"
 #include "headers/NumConv.h"
+#include "headers/HelloStrings.h"
 
 
 int main() {
@@ -39,8 +40,8 @@ int main() {
 
     showStreamExamples();
     showConcatExample();
-    convertNumber();
-    system("dir");
+//    convertNumber();
+    helloStrings();
 
     return 0;
 }
