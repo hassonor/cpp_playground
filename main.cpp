@@ -6,6 +6,7 @@
 #include "headers/NumConv.h"
 #include "headers/HelloStrings.h"
 #include "headers/Scopy.h"
+#include "headers/FillingString.h"
 
 
 int main() {
@@ -44,6 +45,7 @@ int main() {
 //    convertNumber();
     helloStrings();
     scopy();
+    fillString();
     return 0;
 }
 

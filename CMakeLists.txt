@@ -19,5 +19,7 @@ add_executable(cpp_playground main.cpp
         headers/HelloStrings.h
         examples/Scopy.cpp
         headers/Scopy.h
+        examples/FillingString.cpp
+        headers/FillingString.h
 )
 
