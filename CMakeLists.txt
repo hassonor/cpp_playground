@@ -21,5 +21,9 @@ add_executable(cpp_playground main.cpp
         headers/Scopy.h
         examples/FillingString.cpp
         headers/FillingString.h
+        examples/Vector.cpp
+        headers/Vector.h
+        examples/Ch2Solutions.cpp
+        headers/Ch2Solutions.h
 )
 

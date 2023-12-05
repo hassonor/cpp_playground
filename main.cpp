@@ -3,10 +3,9 @@
 #include "headers/Point.h"
 #include "headers/StreamExamples.h"
 #include "headers/ConcatExample.h"
-#include "headers/NumConv.h"
 #include "headers/HelloStrings.h"
-#include "headers/Scopy.h"
-#include "headers/FillingString.h"
+#include "headers/Vector.h"
+#include "headers/Ch2Solutions.h"
 
 
 int main() {
@@ -42,10 +41,18 @@ int main() {
 
     showStreamExamples();
     showConcatExample();
-//    convertNumber();
     helloStrings();
-    scopy();
-    fillString();
+
+    std::string filename = "../examples/Vector.cpp";
+    std::string wordToCount = "i";
+    countWordOccurrences(filename, wordToCount);
+
+    int totalWords = countWhiteSeperatedWords(filename);
+    if (totalWords != -1) {
+        std::cout << "Total number of words in file: " << totalWords << std::endl;
+    }
+//    fillVector();
+    floatVector(0.0, 100.0, 20);
     return 0;
 }
 
