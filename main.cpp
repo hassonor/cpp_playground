@@ -5,6 +5,7 @@
 #include "headers/ConcatExample.h"
 #include "headers/NumConv.h"
 #include "headers/HelloStrings.h"
+#include "headers/Scopy.h"
 
 
 int main() {
@@ -42,7 +43,7 @@ int main() {
     showConcatExample();
 //    convertNumber();
     helloStrings();
-
+    scopy();
     return 0;
 }
 
