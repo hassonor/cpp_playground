@@ -7,6 +7,8 @@
 
 using namespace std;
 
+extern int globe;
+
 char cfunc(int i) {
     if (i == 0)
         return 'a';
@@ -139,4 +141,7 @@ void specifiers() {
          << "\n double = " << sizeof(d) << " bytes"
          << "\n long double = " << sizeof(ld) << " bytes"
          << endl;
+    globe = 47;
 }
+
+

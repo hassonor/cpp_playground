@@ -14,5 +14,9 @@ void passReference(int &r);
 
 void demonstratePassingMethods();
 
+void demonstrateVoidPointer();
+
+void castFromVoidPointer();
+
 
 #endif //CPP_PLAYGROUND_POINTERSANDREFERENCES_H

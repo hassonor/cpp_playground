@@ -10,6 +10,7 @@
 
 using namespace std;
 
+int globe = 11;
 
 int main() {
     Stack s1; // Stack memory
@@ -62,6 +63,9 @@ int main() {
 
     // Pointers and References
     demonstratePassingMethods();
+    cout << "globe: " << globe << endl;
+    specifiers();
+    cout << "globe: " << globe << endl;
 
     return 0;
 }

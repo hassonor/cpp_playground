@@ -47,3 +47,28 @@ void demonstratePassingMethods() {
     passReference(y); // Looks like pass-by-value, is actually pass-by-reference
     cout << "After passReference: y = " << y << endl;
 }
+
+void demonstrateVoidPointer() {
+    void *vp;
+    char c;
+    int i;
+    float f;
+    double d;
+    // The address of ANY type can be
+    // assigned to a void pointer
+    vp = &c;
+    vp = &i;
+    vp = &f;
+    vp = &d;
+}
+
+void castFromVoidPointer() {
+    int i = 99;
+    void *vp = &i;
+    // Can't dereference a void pointer
+    // *vp = 3; // Error!
+    // Must cast back to int before de-referencing
+    *((int *) vp) = 3;
+}
+
+
