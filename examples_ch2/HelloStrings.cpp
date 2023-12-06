@@ -1,6 +1,6 @@
 #include <string>
 #include <iostream>
-#include "../headers/HelloStrings.h"
+#include "headers/HelloStrings.h"
 
 
 void helloStrings() {

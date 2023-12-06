@@ -1,13 +1,16 @@
+//
+// Created by Or on 05/12/2023.
+//
 #include <string>
 #include <fstream>
 #include <iostream>
 #include <stdexcept>
-#include "../headers/FillingString.h"
+#include "headers/Scopy.h"
 
-const std::string SOURCE_FILE = "../examples/Scopy.cpp";
-const std::string TARGET_FILE = "../examples/Scopy3.cpp";
+const std::string SOURCE_FILE = "../examples_ch2/Scopy.cpp";
+const std::string TARGET_FILE = "../examples_ch2/Scopy2.cpp";
 
-void fillFileString(const std::string &sourcePath, const std::string &targetPath) {
+void copyFileContent(const std::string &sourcePath, const std::string &targetPath) {
     std::ifstream in(sourcePath);
     if (!in) {
         throw std::runtime_error("Failed to open " + sourcePath + " for reading.");
@@ -25,15 +28,11 @@ void fillFileString(const std::string &sourcePath, const std::string &targetPath
             throw std::runtime_error("Failed to write to " + targetPath + ".");
         }
     }
-
-    // Note: The file streams are automatically closed when they go out of scope
-    // due to the RAII principle. This releases the file descriptors and other
-    // system resources used for the file operations.
 }
 
-void fillString() {
+void scopy() {
     try {
-        fillFileString(SOURCE_FILE, TARGET_FILE);
+        copyFileContent(SOURCE_FILE, TARGET_FILE);
         std::cout << "File copied successfully." << std::endl;
     } catch (const std::runtime_error &e) {
         std::cerr << "Error: " << e.what() << std::endl;

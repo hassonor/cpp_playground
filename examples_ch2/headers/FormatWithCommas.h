@@ -7,6 +7,6 @@
 template<typename T>
 std::string formatWithCommas(T value);
 
-#include "../examples/FormatWithCommas.cpp"
+#include "../FormatWithCommas.cpp"
 
 #endif // FORMATWITHCOMMAS_H

@@ -1,7 +1,7 @@
 
 #include <algorithm>
 #include <stdexcept>
-#include "../headers/Stack.h"
+#include "headers/Stack.h"
 
 Stack::Stack() : _data(nullptr), _size(0), _maxsize(10) {
     _data = new int[_maxsize];

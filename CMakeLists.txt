@@ -4,26 +4,26 @@ project(cpp_playground)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(cpp_playground main.cpp
-        examples/Stack.cpp
-        headers/Stack.h
-        examples/Point.cpp
-        headers/Point.h
-        headers/FormatWithCommas.h
-        headers/StreamExamples.h
-        examples/SteamExamples.cpp
-        headers/ConcatExample.h
-        examples/ConcatExample.cpp
-        examples/NumConv.cpp
-        headers/NumConv.h
-        examples/HelloStrings.cpp
-        headers/HelloStrings.h
-        examples/Scopy.cpp
-        headers/Scopy.h
-        examples/FillingString.cpp
-        headers/FillingString.h
-        examples/Vector.cpp
-        headers/Vector.h
-        examples/Ch2Solutions.cpp
-        headers/Ch2Solutions.h
+        examples_ch2/Stack.cpp
+        examples_ch2/headers/Stack.h
+        examples_ch2/Point.cpp
+        examples_ch2/headers/Point.h
+        examples_ch2/headers/FormatWithCommas.h
+        examples_ch2/headers/StreamExamples.h
+        examples_ch2/SteamExamples.cpp
+        examples_ch2/headers/ConcatExample.h
+        examples_ch2/ConcatExample.cpp
+        examples_ch2/NumConv.cpp
+        examples_ch2/headers/NumConv.h
+        examples_ch2/HelloStrings.cpp
+        examples_ch2/headers/HelloStrings.h
+        examples_ch2/Scopy.cpp
+        examples_ch2/headers/Scopy.h
+        examples_ch2/FillingString.cpp
+        examples_ch2/headers/FillingString.h
+        examples_ch2/Vector.cpp
+        examples_ch2/headers/Vector.h
+        examples_ch2/Ch2Solutions.cpp
+        examples_ch2/headers/Ch2Solutions.h
 )
 

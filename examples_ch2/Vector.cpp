@@ -10,12 +10,12 @@
 
 using namespace std;
 
-#include "../headers/Vector.h"
+#include "headers/Vector.h"
 
 
 void fillVector() {
     vector<string> v;
-    ifstream in("../examples/Vector.cpp");
+    ifstream in("../examples_ch2/Vector.cpp");
     string line;
     while (getline(in, line)) {
         v.push_back(line); // Add the line to the end
@@ -27,7 +27,7 @@ void fillVector() {
 
 void fillVectorWaitForEnterForEachLine() {
     vector<string> v;
-    ifstream in("../examples/Vector.cpp");
+    ifstream in("../examples_ch2/Vector.cpp");
     string line;
     while (getline(in, line)) {
         v.push_back(line); // Add the line to the end
@@ -40,7 +40,7 @@ void fillVectorWaitForEnterForEachLine() {
 
 void getWords() {
     vector<string> words;
-    ifstream in("../examples/Vector.cpp");
+    ifstream in("../examples_ch2/Vector.cpp");
     string word;
     while (in >> word) {
         words.push_back(word);

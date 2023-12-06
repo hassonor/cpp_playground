@@ -8,7 +8,7 @@
 #include <vector>
 #include <random>
 #include <iomanip>
-#include "../headers/Ch2Solutions.h"
+#include "headers/Ch2Solutions.h"
 
 void countWordOccurrences(const std::string &filepath, const std::string &searchWord) {
     std::ifstream file(filepath);

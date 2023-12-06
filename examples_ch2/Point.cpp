@@ -1,7 +1,7 @@
 // Point.cpp
 // Created by Or on 30/11/2023.
 
-#include "../headers/Point.h"
+#include "headers/Point.h"
 #include <cmath>
 
 int Point::distance(const Point &p) const {
@@ -16,8 +16,8 @@ int Point::distance(int x, int y) const {
     return std::sqrt(dx * dx + dy * dy);
 }
 
-Point& Point::operator=(const Point& other){
-    if(this == &other)
+Point &Point::operator=(const Point &other) {
+    if (this == &other)
         return *this;
 
     _x = other._x;
@@ -26,7 +26,7 @@ Point& Point::operator=(const Point& other){
     return *this;
 }
 
-Point Point::operator+(const Point& other) const {
+Point Point::operator+(const Point &other) const {
     Point p;
     p._x = _x + other._x;
     p._y = _y + other._y;

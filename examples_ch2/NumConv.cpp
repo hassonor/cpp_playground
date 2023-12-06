@@ -1,4 +1,4 @@
-#include "../headers/NumConv.h"
+#include "headers/NumConv.h"
 #include <iostream>
 
 void convertNumber() {

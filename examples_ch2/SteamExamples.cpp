@@ -1,5 +1,5 @@
-#include "../headers/StreamExamples.h"
-#include "../headers/FormatWithCommas.h"
+#include "headers/StreamExamples.h"
+#include "headers/FormatWithCommas.h"
 #include <iostream>
 #include <limits>
 

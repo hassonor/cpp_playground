@@ -1,11 +1,10 @@
-#include <cstdlib>
-#include "headers/Stack.h"
-#include "headers/Point.h"
-#include "headers/StreamExamples.h"
-#include "headers/ConcatExample.h"
-#include "headers/HelloStrings.h"
-#include "headers/Vector.h"
-#include "headers/Ch2Solutions.h"
+#include "examples_ch2/headers/Stack.h"
+#include "examples_ch2/headers/Point.h"
+#include "examples_ch2/headers/StreamExamples.h"
+#include "examples_ch2/headers/ConcatExample.h"
+#include "examples_ch2/headers/HelloStrings.h"
+#include "examples_ch2/headers/Vector.h"
+#include "examples_ch2/headers/Ch2Solutions.h"
 
 
 int main() {
@@ -43,7 +42,7 @@ int main() {
     showConcatExample();
     helloStrings();
 
-    std::string filename = "../examples/Vector.cpp";
+    std::string filename = "../examples_ch2/Vector.cpp";
     std::string wordToCount = "i";
     countWordOccurrences(filename, wordToCount);
 
@@ -51,7 +50,7 @@ int main() {
     if (totalWords != -1) {
         std::cout << "Total number of words in file: " << totalWords << std::endl;
     }
-//    fillVector();
+    fillVector();
     floatVector(0.0, 100.0, 20);
     return 0;
 }
