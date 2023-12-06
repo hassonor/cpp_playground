@@ -27,5 +27,7 @@ add_executable(cpp_playground main.cpp
         examples_ch2/headers/Ch2Solutions.h
         examples_ch3/ch3Examples.cpp
         examples_ch3/headers/ch3Examples.h
+        examples_ch3/PointersAndReferences.cpp
+        examples_ch3/headers/PointersAndReferences.h
 )
 

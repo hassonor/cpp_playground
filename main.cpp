@@ -6,6 +6,9 @@
 #include "examples_ch2/headers/Vector.h"
 #include "examples_ch2/headers/Ch2Solutions.h"
 #include "examples_ch3/headers/ch3Examples.h"
+#include "examples_ch3/headers/PointersAndReferences.h"
+
+using namespace std;
 
 
 int main() {
@@ -54,8 +57,12 @@ int main() {
     fillVector();
     floatVector(0.0, 100.0, 20);
 
-    removeHat('C');
-    specifiers();
+//    removeHat('C');
+//    specifiers();
+
+    // Pointers and References
+    demonstratePassingMethods();
+
     return 0;
 }
 
