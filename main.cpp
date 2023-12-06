@@ -5,6 +5,7 @@
 #include "examples_ch2/headers/HelloStrings.h"
 #include "examples_ch2/headers/Vector.h"
 #include "examples_ch2/headers/Ch2Solutions.h"
+#include "examples_ch3/headers/ch3Examples.h"
 
 
 int main() {
@@ -52,6 +53,9 @@ int main() {
     }
     fillVector();
     floatVector(0.0, 100.0, 20);
+
+    removeHat('C');
+    specifiers();
     return 0;
 }
 
