@@ -7,10 +7,12 @@
 #include "examples_ch2/headers/Ch2Solutions.h"
 #include "examples_ch3/headers/ch3Examples.h"
 #include "examples_ch3/headers/PointersAndReferences.h"
+#include "examples_ch3/headers/bitwiseOperators.h"
 
 using namespace std;
 
 int globe = 11;
+
 
 int main() {
     Stack s1; // Stack memory
@@ -66,6 +68,8 @@ int main() {
     cout << "globe: " << globe << endl;
     specifiers();
     cout << "globe: " << globe << endl;
+
+    bitwiseOperatorsDemo();
 
     return 0;
 }

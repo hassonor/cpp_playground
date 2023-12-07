@@ -29,5 +29,7 @@ add_executable(cpp_playground main.cpp
         examples_ch3/headers/ch3Examples.h
         examples_ch3/PointersAndReferences.cpp
         examples_ch3/headers/PointersAndReferences.h
+        examples_ch3/bitwiseOperators.cpp
+        examples_ch3/headers/bitwiseOperators.h
 )
 
