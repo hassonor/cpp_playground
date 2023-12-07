@@ -91,5 +91,53 @@ void bitwiseOperatorsDemo() {
     b = 10;
     a ^= b;
     std::cout << "Result of 12 ^= 10 is " << a << std::endl;
+}
 
+void printBinary(const unsigned char val) {
+    for (int i = 7; i >= 0; i--)
+        if (val & (1 << i))
+            std::cout << "1";
+        else
+            std::cout << "0";
+        
+}
+
+void bitRotationLeft(unsigned char val) {
+    std::cout << "Initial value in binary: ";
+    printBinary(val);
+    std::cout << " (" << static_cast<int>(val) << " in decimal)" << std::endl;
+
+    int highbit;
+    if (val & 0x80) // Check if high bit is set
+        highbit = 1;
+    else
+        highbit = 0;
+
+    val <<= 1; // Left shift by one position
+
+    val |= highbit; // Rotate the high bit to the bottom
+
+    std::cout << "Value after left rotation: ";
+    printBinary(val);
+    std::cout << " (" << static_cast<int>(val) << " in decimal)" << std::endl;
+}
+
+void bitRotationRight(unsigned char val) {
+    std::cout << "Initial value in binary: ";
+    printBinary(val);
+    std::cout << " (" << static_cast<int>(val) << " in decimal)" << std::endl;
+
+    int lowbit;
+    if (val & 1) // Check if low bit is set
+        lowbit = 1;
+    else
+        lowbit = 0;
+
+    val >>= 1; // Right shift by one position
+
+    val |= (lowbit << 7); // Rotate the low bit to the top
+
+    std::cout << "Value after right rotation: ";
+    printBinary(val);
+    std::cout << " (" << static_cast<int>(val) << " in decimal)" << std::endl;
 }

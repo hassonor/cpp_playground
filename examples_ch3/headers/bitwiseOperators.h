@@ -8,5 +8,11 @@
 
 void bitwiseOperatorsDemo();
 
+void printBinary(unsigned char val);
+
+void bitRotationLeft(unsigned char val);
+
+void bitRotationRight(unsigned char val);
+
 
 #endif //CPP_PLAYGROUND_BITWISEOPERATORS_H

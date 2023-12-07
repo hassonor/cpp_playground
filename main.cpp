@@ -70,7 +70,10 @@ int main() {
     cout << "globe: " << globe << endl;
 
     bitwiseOperatorsDemo();
-
+    bitRotationLeft(150);
+    bitRotationRight(150);
+    bitRotationLeft(151);
+    bitRotationRight(151);
     return 0;
 }
 
