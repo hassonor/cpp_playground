@@ -2,7 +2,7 @@
 // Created by Or on 12/7/2023.
 //
 
-#include "headers/bitwiseOperators.h"
+#include "headers/BitwiseOperators.h"
 
 
 #include <iostream>
@@ -99,7 +99,7 @@ void printBinary(const unsigned char val) {
             std::cout << "1";
         else
             std::cout << "0";
-        
+
 }
 
 void bitRotationLeft(unsigned char val) {

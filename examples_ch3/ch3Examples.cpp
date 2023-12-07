@@ -128,6 +128,7 @@ void specifiers() {
     float f;
 
     double d;
+
     long double ld;
     cout << "\n char = " << sizeof(c) << " bytes"
          << "\n unsigned char = " << sizeof(cu) << " bytes"
@@ -143,5 +144,59 @@ void specifiers() {
          << endl;
     globe = 47;
 }
+
+
+void explicitOperatorsDemo() {
+    int a = 10, b = 5;
+
+    // Example of 'and' (&&)
+    if (a > 0 and b > 0) {
+        std::cout << "Both a and b are positive (using 'and')." << std::endl;
+    }
+
+    // Example of 'or' (||)
+    if (a > 0 or b < 0) {
+        std::cout << "Either a is positive or b is negative (using 'or')." << std::endl;
+    }
+
+    // Example of 'not' (!)
+    if (not(a < 0)) {
+        std::cout << "a is not negative (using 'not')." << std::endl;
+    }
+
+    // Example of 'bitand' (&)
+    int c = a bitand b; // Bitwise AND
+    std::cout << "Bitwise AND of a and b is " << c << " (using 'bitand')." << std::endl;
+
+    // Example of 'bitor' (|)
+    c = a bitor b; // Bitwise OR
+    std::cout << "Bitwise OR of a and b is " << c << " (using 'bitor')." << std::endl;
+
+    // Example of 'xor' (^)
+    c = a xor b; // Bitwise XOR
+    std::cout << "Bitwise XOR of a and b is " << c << " (using 'xor')." << std::endl;
+
+    // Example of 'compl' (~)
+    c = compl a; // Bitwise NOT
+    std::cout << "Bitwise NOT of a is " << c << " (using 'compl')." << std::endl;
+
+    // Example of 'and_eq' (&=)
+    c and_eq b; // c = c & b
+    std::cout << "Result of c and_eq b is " << c << " (using 'and_eq')." << std::endl;
+
+    // Example of 'or_eq' (|=)
+    c or_eq a; // c = c | a
+    std::cout << "Result of c or_eq a is " << c << " (using 'or_eq')." << std::endl;
+
+    // Example of 'xor_eq' (^=)
+    c xor_eq b; // c = c ^ b
+    std::cout << "Result of c xor_eq b is " << c << " (using 'xor_eq')." << std::endl;
+
+    // Example of 'not_eq' (!=)
+    if (a not_eq b) {
+        std::cout << "a is not equal to b (using 'not_eq')." << std::endl;
+    }
+}
+
 
 

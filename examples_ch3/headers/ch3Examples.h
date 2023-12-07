@@ -18,5 +18,7 @@ void removeHat(char cat);
 
 void specifiers();
 
+void explicitOperatorsDemo();
+
 
 #endif //CPP_PLAYGROUND_CH3EXAMPLES_H

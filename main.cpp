@@ -7,7 +7,8 @@
 #include "examples_ch2/headers/Ch2Solutions.h"
 #include "examples_ch3/headers/ch3Examples.h"
 #include "examples_ch3/headers/PointersAndReferences.h"
-#include "examples_ch3/headers/bitwiseOperators.h"
+#include "examples_ch3/headers/BitwiseOperators.h"
+#include "examples_ch3/headers/CastingDemos.h"
 
 using namespace std;
 
@@ -74,6 +75,9 @@ int main() {
     bitRotationRight(150);
     bitRotationLeft(151);
     bitRotationRight(151);
+    constCastDemo();
+    reinterpretCastDemo();
+    explicitOperatorsDemo();
     return 0;
 }
 
