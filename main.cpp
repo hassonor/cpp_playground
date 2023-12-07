@@ -9,6 +9,7 @@
 #include "examples_ch3/headers/PointersAndReferences.h"
 #include "examples_ch3/headers/BitwiseOperators.h"
 #include "examples_ch3/headers/CastingDemos.h"
+#include "examples_ch3/headers/StructExamples.h"
 
 using namespace std;
 
@@ -78,6 +79,7 @@ int main() {
     constCastDemo();
     reinterpretCastDemo();
     explicitOperatorsDemo();
+    simpleStruct();
     return 0;
 }
 

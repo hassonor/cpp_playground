@@ -33,5 +33,7 @@ add_executable(cpp_playground main.cpp
         examples_ch3/headers/BitwiseOperators.h
         examples_ch3/CastingDemos.cpp
         examples_ch3/headers/CastingDemos.h
+        examples_ch3/StructExamples.cpp
+        examples_ch3/headers/StructExamples.h
 )
 
