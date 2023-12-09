@@ -11,6 +11,7 @@
 #include "examples_ch3/headers/CastingDemos.h"
 #include "examples_ch3/headers/StructExamples.h"
 #include "examples_ch3/headers/Arrays.h"
+#include "examples_ch3/headers/Pointer.h"
 
 using namespace std;
 
@@ -116,6 +117,8 @@ int main(int argc, char *argv[]) {
     dp++;
     std::cout << "dp = " << reinterpret_cast<uintptr_t>(dp) << std::endl;
     std::cout << "*dp = " << *dp << std::endl;
+
+    pointerArithmeticDemo();
 
 }
 
