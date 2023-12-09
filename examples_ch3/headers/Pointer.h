@@ -8,5 +8,11 @@
 
 void pointerArithmeticDemo();
 
+void pointerToFunction();
+
+void functionTable();
+
+void functionTable2();
+
 
 #endif //CPP_PLAYGROUND_POINTER_H

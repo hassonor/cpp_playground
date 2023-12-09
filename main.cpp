@@ -119,7 +119,9 @@ int main(int argc, char *argv[]) {
     std::cout << "*dp = " << *dp << std::endl;
 
     pointerArithmeticDemo();
-
+    pointerToFunction();
+    functionTable();
+    functionTable2();
 }
 
 
