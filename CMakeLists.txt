@@ -35,5 +35,7 @@ add_executable(cpp_playground main.cpp
         examples_ch3/headers/CastingDemos.h
         examples_ch3/StructExamples.cpp
         examples_ch3/headers/StructExamples.h
+        examples_ch3/Arrays.cpp
+        examples_ch3/headers/Arrays.h
 )
 

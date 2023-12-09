@@ -10,13 +10,14 @@
 #include "examples_ch3/headers/BitwiseOperators.h"
 #include "examples_ch3/headers/CastingDemos.h"
 #include "examples_ch3/headers/StructExamples.h"
+#include "examples_ch3/headers/Arrays.h"
 
 using namespace std;
 
 int globe = 11;
 
 
-int main() {
+int main(int argc, char *argv[]) {
     Stack s1; // Stack memory
 
     SecureStack s3;
@@ -80,7 +81,42 @@ int main() {
     reinterpretCastDemo();
     explicitOperatorsDemo();
     simpleStruct();
-    return 0;
+
+    cout << "argc = " << argc << endl;
+    for (int i = 0; i < argc; i++)
+        cout << "argv[" << i << "] = "
+             << argv[i] << endl;
+
+    double d = atof("3.14159");
+    unsigned char *cp =
+            reinterpret_cast<unsigned char *>(&d);
+    for (int i = sizeof(double); i > 0; i -= 2) {
+        printBinary(cp[i - 1]);
+        printBinary(cp[i]);
+    }
+
+    int i[10];
+    double q[10];
+    int *ip = i;
+    double *dp = q;
+
+    ip[0] = 3;
+    ip[1] = 5;
+    dp[0] = 3.14;
+    dp[1] = 6.28;
+
+    std::cout << "ip = " << reinterpret_cast<uintptr_t>(ip) << std::endl;
+    std::cout << "*ip = " << *ip << std::endl;
+    ip++;
+    std::cout << "ip = " << reinterpret_cast<uintptr_t>(ip) << std::endl;
+    std::cout << "*ip = " << *ip << std::endl;
+
+    std::cout << "dp = " << reinterpret_cast<uintptr_t>(dp) << std::endl;
+    std::cout << "*dp = " << *dp << std::endl;
+    dp++;
+    std::cout << "dp = " << reinterpret_cast<uintptr_t>(dp) << std::endl;
+    std::cout << "*dp = " << *dp << std::endl;
+
 }
 
 
