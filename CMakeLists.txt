@@ -39,5 +39,9 @@ add_executable(cpp_playground main.cpp
         examples_ch3/headers/Arrays.h
         examples_ch3/Pointer.cpp
         examples_ch3/headers/Pointer.h
+        examples_ch4/CLib.cpp
+        examples_ch4/headers/CLib.h
+        examples_ch4/CppLib.cpp
+        examples_ch4/headers/CppLib.h
 )
 

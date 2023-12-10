@@ -12,6 +12,8 @@
 #include "examples_ch3/headers/StructExamples.h"
 #include "examples_ch3/headers/Arrays.h"
 #include "examples_ch3/headers/Pointer.h"
+#include "examples_ch4/headers/CLib.h"
+#include "examples_ch4/headers/CppLib.h"
 
 using namespace std;
 
@@ -120,8 +122,10 @@ int main(int argc, char *argv[]) {
 
     pointerArithmeticDemo();
     pointerToFunction();
-    functionTable();
-    functionTable2();
+//    functionTable();
+//    functionTable2();
+    testCLib();
+    testStructSizes();
 }
 
 
