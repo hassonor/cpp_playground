@@ -49,5 +49,10 @@ add_executable(cpp_playground main.cpp
         examples_ch5/headers/Friends.h
         examples_ch5/NestedFriend.cpp
         examples_ch5/headers/NestedFriend.h
+        examples_ch5/ClassVsStruct.cpp
+        examples_ch5/headers/ClassVsStruct.h
+        examples_ch5/headers/StashV2.h
+        examples_ch5/StackV2.cpp
+        examples_ch5/headers/StackV2.h
 )
 
