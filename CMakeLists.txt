@@ -43,5 +43,7 @@ add_executable(cpp_playground main.cpp
         examples_ch4/headers/CLib.h
         examples_ch4/CppLib.cpp
         examples_ch4/headers/CppLib.h
+        examples_ch4/Stack.cpp
+        examples_ch4/headers/Stack.h
 )
 
