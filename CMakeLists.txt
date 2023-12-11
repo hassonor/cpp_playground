@@ -54,5 +54,11 @@ add_executable(cpp_playground main.cpp
         examples_ch5/headers/StashV2.h
         examples_ch5/StackV2.cpp
         examples_ch5/headers/StackV2.h
+        examples_ch5/Handle.cpp
+        examples_ch5/headers/Handle.h
+        examples_ch5/Ex1.cpp
+        examples_ch5/headers/Ex1.h
+        examples_ch5/Ex3.cpp
+        examples_ch5/headers/Ex3.h
 )
 
