@@ -45,5 +45,9 @@ add_executable(cpp_playground main.cpp
         examples_ch4/headers/CppLib.h
         examples_ch4/Stack.cpp
         examples_ch4/headers/Stack.h
+        examples_ch5/Friends.cpp
+        examples_ch5/headers/Friends.h
+        examples_ch5/NestedFriend.cpp
+        examples_ch5/headers/NestedFriend.h
 )
 

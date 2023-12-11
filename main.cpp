@@ -14,19 +14,20 @@
 #include "examples_ch3/headers/Pointer.h"
 #include "examples_ch4/headers/CLib.h"
 #include "examples_ch4/headers/CppLib.h"
+#include "examples_ch5/headers/NestedFriend.h"
 
 using namespace std;
 
 int globe = 11;
 
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
     Stack s1; // Stack memory
 
     SecureStack s3;
     s3.print();
 
-    Stack *sptr;
+    Stack* sptr;
     sptr = &s3;
 
     // Virtual function, binding at runtime
@@ -42,7 +43,7 @@ int main(int argc, char *argv[]) {
     }
 
 
-    Stack *s2 = new Stack(); // Heap memory
+    Stack* s2 = new Stack(); // Heap memory
     s2->Push(14);
     delete s2;
 
@@ -91,8 +92,8 @@ int main(int argc, char *argv[]) {
              << argv[i] << endl;
 
     double d = atof("3.14159");
-    unsigned char *cp =
-            reinterpret_cast<unsigned char *>(&d);
+    unsigned char* cp =
+            reinterpret_cast<unsigned char*>(&d);
     for (int i = sizeof(double); i > 0; i -= 2) {
         printBinary(cp[i - 1]);
         printBinary(cp[i]);
@@ -100,8 +101,8 @@ int main(int argc, char *argv[]) {
 
     int i[10];
     double q[10];
-    int *ip = i;
-    double *dp = q;
+    int* ip = i;
+    double* dp = q;
 
     ip[0] = 3;
     ip[1] = 5;
@@ -126,6 +127,7 @@ int main(int argc, char *argv[]) {
 //    functionTable2();
     testCLib();
     testStructSizes();
+    testNestedFriend();
 }
 
 
