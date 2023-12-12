@@ -17,6 +17,7 @@
 #include "examples_ch5/headers/NestedFriend.h"
 #include "examples_ch5/headers/Ex1.h"
 #include "examples_ch5/headers/Ex3.h"
+#include "examples_ch5/headers/StackOfInt.h"
 
 using namespace std;
 
@@ -134,6 +135,8 @@ int main(int argc, char* argv[]) {
     cout << showValue(&ex3) << endl;
     changeValue(&ex3, 5);
     cout << showValue(&ex3) << endl;
+
+
 }
 
 

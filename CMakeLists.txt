@@ -60,5 +60,8 @@ add_executable(cpp_playground main.cpp
         examples_ch5/headers/Ex1.h
         examples_ch5/Ex3.cpp
         examples_ch5/headers/Ex3.h
+        examples_ch5/StackImpArray.cpp
+        examples_ch5/StackImpVector.cpp
+        examples_ch5/headers/StackOfInt.h
 )
 
