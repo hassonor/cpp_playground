@@ -18,6 +18,10 @@
 #include "examples_ch5/headers/Ex1.h"
 #include "examples_ch5/headers/Ex3.h"
 #include "examples_ch5/headers/StackOfInt.h"
+#include "examples_ch6/headers/Tree.h"
+#include "examples_ch6/headers/Stash2.h"
+#include "examples_ch6/headers/Stack3.h"
+#include "examples_ch6/headers/MultiArg.h"
 
 using namespace std;
 
@@ -135,8 +139,17 @@ int main(int argc, char* argv[]) {
     cout << showValue(&ex3) << endl;
     changeValue(&ex3, 5);
     cout << showValue(&ex3) << endl;
-
-
+    testTreeClass();
+    int i_test = 4;
+    int* i_pointer = &i_test;
+    cout << &i_test << endl;
+    cout << i_pointer << endl;
+    *i_pointer = 10;
+    cout << i_test << endl;
+    cout << *i_pointer << endl;
+    testStash3();
+    testMultiArg();
+    testStack3();
 }
 
 

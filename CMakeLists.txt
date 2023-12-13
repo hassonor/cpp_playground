@@ -63,5 +63,14 @@ add_executable(cpp_playground main.cpp
         examples_ch5/StackImpArray.cpp
         examples_ch5/StackImpVector.cpp
         examples_ch5/headers/StackOfInt.h
+        examples_ch6/Tree.cpp
+        examples_ch6/headers/Tree.h
+        examples_ch6/Stash2.cpp
+        examples_ch6/headers/Stash2.h
+        examples_ch6/Stack3.cpp
+        examples_ch6/headers/Stack3.h
+        examples_ch6/MultiArg.cpp
+        examples_ch6/headers/MultiArg.h
+        examples_ch6/AuthDefaultConstructor.cpp
 )
 

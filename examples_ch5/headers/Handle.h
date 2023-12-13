@@ -10,7 +10,9 @@ class Handle {
     struct Cheshire;
     Cheshire* smile;
 public:
-    void initialize();
+    Handle();
+
+    ~Handle();
 
     void cleanup();
 

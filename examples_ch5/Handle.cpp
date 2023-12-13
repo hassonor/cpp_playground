@@ -8,12 +8,12 @@ struct Handle::Cheshire {
     int i;
 };
 
-void Handle::initialize() {
+Handle::Handle() {
     smile = new Cheshire;
     smile->i = 0;
 };
 
-void Handle::cleanup() {
+Handle::~Handle() {
     delete smile;
 }
 
