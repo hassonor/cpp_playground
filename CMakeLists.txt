@@ -72,5 +72,13 @@ add_executable(cpp_playground main.cpp
         examples_ch6/MultiArg.cpp
         examples_ch6/headers/MultiArg.h
         examples_ch6/AuthDefaultConstructor.cpp
+        examples_ch11/FreeStandingReferences.cpp
+        examples_ch11/headers/FreeStandingReferences.h
+        examples_ch11/Reference.cpp
+        examples_ch11/headers/Reference.h
+        examples_ch11/ReferenceToPointer.cpp
+        examples_ch11/headers/ReferenceToPointer.h
+        examples_ch11/HowMany2.cpp
+        examples_ch11/headers/HowMany2.h
 )
 

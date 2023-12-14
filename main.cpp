@@ -22,6 +22,9 @@
 #include "examples_ch6/headers/Stash2.h"
 #include "examples_ch6/headers/Stack3.h"
 #include "examples_ch6/headers/MultiArg.h"
+#include "examples_ch11/headers/FreeStandingReferences.h"
+#include "examples_ch11/headers/ReferenceToPointer.h"
+#include "examples_ch11/headers/HowMany2.h"
 
 using namespace std;
 
@@ -150,6 +153,9 @@ int main(int argc, char* argv[]) {
     testStash3();
     testMultiArg();
     testStack3();
+    showFreeStandingReferenceDemo();
+    referenceToPointerDemo();
+    testHowMany2();
 }
 
 

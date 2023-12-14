@@ -1,0 +1,12 @@
+//
+// Created by Or on 12/14/2023.
+//
+
+#ifndef CPP_PLAYGROUND_REFERENCETOPOINTER_H
+#define CPP_PLAYGROUND_REFERENCETOPOINTER_H
+
+
+void referenceToPointerDemo();
+
+
+#endif //CPP_PLAYGROUND_REFERENCETOPOINTER_H
