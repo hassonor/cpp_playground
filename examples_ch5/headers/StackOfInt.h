@@ -12,6 +12,11 @@ public:
 
     StackOfInt(int size);
 
+    StackOfInt(const StackOfInt& stackOfInt);
+
+    StackOfInt& operator=(const StackOfInt& stackOfInt);
+
+
     void push(int value);
 
     void inflate(int);
@@ -23,6 +28,14 @@ public:
     bool isEmpty() const;
 
     bool isFull() const;
+
+    int elementAt(int k) const;
+
+    int getSize() const;
+
+    int numberOfElements() const;
+
+    virtual ~StackOfInt();
 
 };
 

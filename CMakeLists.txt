@@ -80,5 +80,13 @@ add_executable(cpp_playground main.cpp
         examples_ch11/headers/ReferenceToPointer.h
         examples_ch11/HowMany2.cpp
         examples_ch11/headers/HowMany2.h
+        examples_ch11/DefaultCopyConstructor.cpp
+        examples_ch11/headers/DefaultCopyConstructor.h
+        examples_ch11/PointerToMemberData.cpp
+        examples_ch11/headers/PointerToMemberData.h
+        examples_ch11/PointerToMemberFunction.cpp
+        examples_ch11/headers/PointerToMemberFunction.h
+        examples_ch11/PointerToMemberFunction2.cpp
+        examples_ch11/headers/PointerToMemberFunction2.h
 )
 

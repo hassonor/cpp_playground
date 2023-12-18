@@ -25,6 +25,9 @@
 #include "examples_ch11/headers/FreeStandingReferences.h"
 #include "examples_ch11/headers/ReferenceToPointer.h"
 #include "examples_ch11/headers/HowMany2.h"
+#include "examples_ch11/headers/DefaultCopyConstructor.h"
+#include "examples_ch11/headers/PointerToMemberData.h"
+#include "examples_ch11/headers/PointerToMemberFunction.h"
 
 using namespace std;
 
@@ -156,6 +159,9 @@ int main(int argc, char* argv[]) {
     showFreeStandingReferenceDemo();
     referenceToPointerDemo();
     testHowMany2();
+    testComposite();
+    testDataClass();
+    testWidget1();
 }
 
 
