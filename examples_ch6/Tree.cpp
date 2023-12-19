@@ -31,7 +31,7 @@ void testTreeClass() {
     {
         Tree t(12);
         cout << "after Tree creation" << endl;
-        t.printSize();
+        t.Tree::printSize();
         t.grow(4);
         cout << "before closing brace" << endl;
     }

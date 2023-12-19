@@ -162,6 +162,7 @@ int main(int argc, char* argv[]) {
     testComposite();
     testDataClass();
     testWidget1();
+    testTreeClass();
 }
 
 

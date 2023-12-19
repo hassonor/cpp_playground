@@ -22,9 +22,3 @@ int Widget2::count() const {
     return cnt;
 }
 
-void testWidget2() {
-    Widget2 w2;
-    for (int i = 0; i < w2.count(); i++)
-        w2.select(i, 47);
-}
-
