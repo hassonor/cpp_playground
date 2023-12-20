@@ -88,5 +88,9 @@ add_executable(cpp_playground main.cpp
         examples_ch11/headers/PointerToMemberFunction.h
         examples_ch11/PointerToMemberFunction2.cpp
         examples_ch11/headers/PointerToMemberFunction2.h
+        examples_ch13/MallocClass.cpp
+        examples_ch13/headers/MallocClass.h
+        examples_ch13/PStash.cpp
+        examples_ch13/headers/PStash.h
 )
 
