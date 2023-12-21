@@ -1,0 +1,12 @@
+//
+// Created by Or on 12/21/2023.
+//
+
+#ifndef CPP_PLAYGROUND_SYNTHESIZEFUNCTIONS_H
+#define CPP_PLAYGROUND_SYNTHESIZEFUNCTIONS_H
+
+
+void testSynthesizeFunctions();
+
+
+#endif //CPP_PLAYGROUND_SYNTHESIZEFUNCTIONS_H

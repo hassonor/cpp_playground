@@ -92,5 +92,13 @@ add_executable(cpp_playground main.cpp
         examples_ch13/headers/MallocClass.h
         examples_ch13/PStash.cpp
         examples_ch13/headers/PStash.h
+        examples_ch14/NameHiding.cpp
+        examples_ch14/headers/NameHiding.h
+        examples_ch14/SynthesizeFunctions.cpp
+        examples_ch14/headers/SynthesizeFunctions.h
+        examples_ch14/Car.cpp
+        examples_ch14/headers/Car.h
+        examples_ch14/FName.cpp
+        examples_ch14/headers/FName.h
 )
 
