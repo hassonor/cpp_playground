@@ -1,0 +1,12 @@
+//
+// Created by Or on 12/23/2023.
+//
+
+#ifndef CPP_PLAYGROUND_PROTECTEDEXAMPLE_H
+#define CPP_PLAYGROUND_PROTECTEDEXAMPLE_H
+
+
+void testProtectedExample();
+
+
+#endif //CPP_PLAYGROUND_PROTECTEDEXAMPLE_H

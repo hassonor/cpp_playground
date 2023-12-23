@@ -31,6 +31,7 @@
 #include "examples_ch14/headers/NameHiding.h"
 #include "examples_ch14/headers/SynthesizeFunctions.h"
 #include "examples_ch14/headers/FName.h"
+#include "examples_ch14/headers/OperatorInheritance.h"
 
 using namespace std;
 
@@ -169,6 +170,7 @@ int main(int argc, char* argv[]) {
     testNameHiding();
     testSynthesizeFunctions();
     testFNameClass();
+    testByte2();
 }
 
 

@@ -100,5 +100,13 @@ add_executable(cpp_playground main.cpp
         examples_ch14/headers/Car.h
         examples_ch14/FName.cpp
         examples_ch14/headers/FName.h
+        examples_ch14/PrivateInheritance.cpp
+        examples_ch14/headers/PrivateInheritance.h
+        examples_ch14/ProtectedExample.cpp
+        examples_ch14/headers/ProtectedExample.h
+        examples_ch14/Byte.cpp
+        examples_ch14/headers/Byte.h
+        examples_ch14/OperatorInheritance.cpp
+        examples_ch14/headers/OperatorInheritance.h
 )
 
