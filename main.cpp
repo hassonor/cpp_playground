@@ -32,6 +32,8 @@
 #include "examples_ch14/headers/SynthesizeFunctions.h"
 #include "examples_ch14/headers/FName.h"
 #include "examples_ch14/headers/OperatorInheritance.h"
+#include "examples_ch14/headers/CopyConstructorUpCastingDemo.h"
+#include "exhamples_ch15/headers/Instrument.h"
 
 using namespace std;
 
@@ -39,6 +41,24 @@ int globe = 11;
 
 
 int main(int argc, char* argv[]) {
+    Instrument* A[] = {
+            new Wind,
+            new Percussion,
+            new Stringed,
+            new Brass
+    };
+
+    Wind flute;
+    Percussion drum;
+    Stringed violin;
+    Brass flugelhorn;
+    Woodwind recorder;
+    tune(flute);
+    tune(drum);
+    tune(violin);
+    tune(flugelhorn);
+    tune(recorder);
+    f(flugelhorn);
 //    Stack s1; // Stack memory
 //
 //    SecureStack s3;
@@ -167,10 +187,11 @@ int main(int argc, char* argv[]) {
 //    testDataClass();
 //    testWidget1();
 //    testTreeClass();
-    testNameHiding();
-    testSynthesizeFunctions();
-    testFNameClass();
-    testByte2();
+//    testNameHiding();
+//    testSynthesizeFunctions();
+//    testFNameClass();
+//    testByte2();
+//    testCCUpCastingDemo();
 }
 
 

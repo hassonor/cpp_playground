@@ -108,5 +108,9 @@ add_executable(cpp_playground main.cpp
         examples_ch14/headers/Byte.h
         examples_ch14/OperatorInheritance.cpp
         examples_ch14/headers/OperatorInheritance.h
+        examples_ch14/CopyConstructorUpCastingDemo.cpp
+        examples_ch14/headers/CopyConstructorUpCastingDemo.h
+        exhamples_ch15/Instrument.cpp
+        exhamples_ch15/headers/Instrument.h
 )
 
