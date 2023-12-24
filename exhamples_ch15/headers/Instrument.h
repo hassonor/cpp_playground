@@ -18,11 +18,11 @@ enum note {
 
 class Instrument {
 public:
-    virtual void play(note) const;
+    virtual void play(note) const = 0;
 
-    virtual string what() const;
+    virtual string what() const = 0;
 
-    virtual void adjust(int);
+    virtual void adjust(int) = 0;
 };
 
 class Wind : public Instrument {

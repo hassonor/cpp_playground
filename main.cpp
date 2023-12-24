@@ -34,6 +34,7 @@
 #include "examples_ch14/headers/OperatorInheritance.h"
 #include "examples_ch14/headers/CopyConstructorUpCastingDemo.h"
 #include "exhamples_ch15/headers/Instrument.h"
+#include "exhamples_ch15/headers/AddingVirtuals.h"
 
 using namespace std;
 
@@ -41,12 +42,7 @@ int globe = 11;
 
 
 int main(int argc, char* argv[]) {
-    Instrument* A[] = {
-            new Wind,
-            new Percussion,
-            new Stringed,
-            new Brass
-    };
+
 
     Wind flute;
     Percussion drum;
@@ -59,6 +55,7 @@ int main(int argc, char* argv[]) {
     tune(flugelhorn);
     tune(recorder);
     f(flugelhorn);
+    testAddingVirtualsClass();
 //    Stack s1; // Stack memory
 //
 //    SecureStack s3;

@@ -112,5 +112,7 @@ add_executable(cpp_playground main.cpp
         examples_ch14/headers/CopyConstructorUpCastingDemo.h
         exhamples_ch15/Instrument.cpp
         exhamples_ch15/headers/Instrument.h
+        exhamples_ch15/AddingVirtuals.cpp
+        exhamples_ch15/headers/AddingVirtuals.h
 )
 
