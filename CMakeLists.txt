@@ -114,5 +114,7 @@ add_executable(cpp_playground main.cpp
         exhamples_ch15/headers/Instrument.h
         exhamples_ch15/AddingVirtuals.cpp
         exhamples_ch15/headers/AddingVirtuals.h
+        exhamples_ch15/NameHiding2.cpp
+        exhamples_ch15/headers/NameHiding2.h
 )
 
