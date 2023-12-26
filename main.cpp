@@ -38,6 +38,7 @@
 #include "exhamples_ch15/headers/VariantReturn.h"
 #include "exhamples_ch15/headers/VirtualDestructors.h"
 #include "exhamples_ch15/headers/OperatorPolymorphism.h"
+#include "exhamples_ch15/headers/DynamicCast.h"
 
 using namespace std;
 
@@ -62,7 +63,8 @@ public:
 
 
 int main(int argc, char* argv[]) {
-    testOperatorPolymorphism();
+    testDynamicCast();
+//    testOperatorPolymorphism();
     //    Base3* bp = new Derived3; // Upcast
 //    delete bp;
 //    testVirtualDestructors();

@@ -124,5 +124,7 @@ add_executable(cpp_playground main.cpp
         exhamples_ch15/headers/OStack.h
         exhamples_ch15/OperatorPolymorphism.cpp
         exhamples_ch15/headers/OperatorPolymorphism.h
+        exhamples_ch15/DynamicCast.cpp
+        exhamples_ch15/headers/DynamicCast.h
 )
 
