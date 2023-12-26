@@ -122,5 +122,7 @@ add_executable(cpp_playground main.cpp
         exhamples_ch15/headers/VirtualDestructors.h
         exhamples_ch15/OStack.cpp
         exhamples_ch15/headers/OStack.h
+        exhamples_ch15/OperatorPolymorphism.cpp
+        exhamples_ch15/headers/OperatorPolymorphism.h
 )
 
