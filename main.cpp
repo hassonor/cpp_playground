@@ -35,27 +35,48 @@
 #include "examples_ch14/headers/CopyConstructorUpCastingDemo.h"
 #include "exhamples_ch15/headers/Instrument.h"
 #include "exhamples_ch15/headers/AddingVirtuals.h"
+#include "exhamples_ch15/headers/VariantReturn.h"
+#include "exhamples_ch15/headers/VirtualDestructors.h"
 
 using namespace std;
 
 int globe = 11;
 
+class Base3 {
+public:
+    virtual ~Base3() {
+        cout << "~Base3\n";
+        f();
+    }
+
+    virtual void f() { cout << "Base3::f()\n"; }
+};
+
+class Derived3 : public Base3 {
+public:
+    ~Derived3() { cout << "~Derived()\n"; }
+
+    void f() { cout << "Derived::f()\n"; }
+};
+
 
 int main(int argc, char* argv[]) {
-
-
-    Wind flute;
-    Percussion drum;
-    Stringed violin;
-    Brass flugelhorn;
-    Woodwind recorder;
-    tune(flute);
-    tune(drum);
-    tune(violin);
-    tune(flugelhorn);
-    tune(recorder);
-    f(flugelhorn);
-    testAddingVirtualsClass();
+    Base3* bp = new Derived3; // Upcast
+    delete bp;
+//    testVirtualDestructors();
+    //    testVariantReturn();
+//    Wind flute;
+//    Percussion drum;
+//    Stringed violin;
+//    Brass flugelhorn;
+//    Woodwind recorder;
+//    tune(flute);
+//    tune(drum);
+//    tune(violin);
+//    tune(flugelhorn);
+//    tune(recorder);
+//    f(flugelhorn);
+//    testAddingVirtualsClass();
 //    Stack s1; // Stack memory
 //
 //    SecureStack s3;

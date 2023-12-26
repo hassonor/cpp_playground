@@ -55,6 +55,7 @@ void testNameHiding2() {
     d1.f(s);
 
     Derived_2 d2;
+    d2.f();
     //! d2.f(s); // string version hidden
 
     Derived_4 d4;

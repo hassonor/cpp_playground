@@ -116,5 +116,11 @@ add_executable(cpp_playground main.cpp
         exhamples_ch15/headers/AddingVirtuals.h
         exhamples_ch15/NameHiding2.cpp
         exhamples_ch15/headers/NameHiding2.h
+        exhamples_ch15/VariantReturn.cpp
+        exhamples_ch15/headers/VariantReturn.h
+        exhamples_ch15/VirtualDestructors.cpp
+        exhamples_ch15/headers/VirtualDestructors.h
+        exhamples_ch15/OStack.cpp
+        exhamples_ch15/headers/OStack.h
 )
 
