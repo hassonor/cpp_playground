@@ -110,23 +110,37 @@ add_executable(cpp_playground main.cpp
         examples_ch14/headers/OperatorInheritance.h
         examples_ch14/CopyConstructorUpCastingDemo.cpp
         examples_ch14/headers/CopyConstructorUpCastingDemo.h
-        exhamples_ch15/Instrument.cpp
-        exhamples_ch15/headers/Instrument.h
-        exhamples_ch15/AddingVirtuals.cpp
-        exhamples_ch15/headers/AddingVirtuals.h
-        exhamples_ch15/NameHiding2.cpp
-        exhamples_ch15/headers/NameHiding2.h
-        exhamples_ch15/VariantReturn.cpp
-        exhamples_ch15/headers/VariantReturn.h
-        exhamples_ch15/VirtualDestructors.cpp
-        exhamples_ch15/headers/VirtualDestructors.h
-        exhamples_ch15/OStack.cpp
-        exhamples_ch15/headers/OStack.h
-        exhamples_ch15/OperatorPolymorphism.cpp
-        exhamples_ch15/headers/OperatorPolymorphism.h
-        exhamples_ch15/DynamicCast.cpp
-        exhamples_ch15/headers/DynamicCast.h
-        exhamples_ch15/StaticHierarchyNavigation.cpp
-        exhamples_ch15/headers/StaticHierarchyNavigation.h
+        examples_ch15/Instrument.cpp
+        examples_ch15/headers/Instrument.h
+        examples_ch15/AddingVirtuals.cpp
+        examples_ch15/headers/AddingVirtuals.h
+        examples_ch15/NameHiding2.cpp
+        examples_ch15/headers/NameHiding2.h
+        examples_ch15/VariantReturn.cpp
+        examples_ch15/headers/VariantReturn.h
+        examples_ch15/VirtualDestructors.cpp
+        examples_ch15/headers/VirtualDestructors.h
+        examples_ch15/OStack.cpp
+        examples_ch15/headers/OStack.h
+        examples_ch15/OperatorPolymorphism.cpp
+        examples_ch15/headers/OperatorPolymorphism.h
+        examples_ch15/DynamicCast.cpp
+        examples_ch15/headers/DynamicCast.h
+        examples_ch15/StaticHierarchyNavigation.cpp
+        examples_ch15/headers/StaticHierarchyNavigation.h
+        unit_2_sum_example/Point2.cpp
+        unit_2_sum_example/headers/Point2.h
+        unit_2_sum_example/Line2.cpp
+        unit_2_sum_example/headers/Line2.h
+        unit_2_sum_example/Circle2.cpp
+        unit_2_sum_example/headers/Circle2.h
+        unit_2_sum_example/headers/Shape2.h
+        unit_2_sum_example/Polygon2.cpp
+        unit_2_sum_example/headers/Polygon2.h
+        unit_2_sum_example/headers/Filter.h
+        unit_2_sum_example/FilterPerimeter.cpp
+        unit_2_sum_example/headers/FilterPerimeter.h
+        unit_2_sum_example/ShapesContainer.cpp
+        unit_2_sum_example/headers/ShapesContainer.h
 )
 

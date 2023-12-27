@@ -33,40 +33,22 @@
 #include "examples_ch14/headers/FName.h"
 #include "examples_ch14/headers/OperatorInheritance.h"
 #include "examples_ch14/headers/CopyConstructorUpCastingDemo.h"
-#include "exhamples_ch15/headers/Instrument.h"
-#include "exhamples_ch15/headers/AddingVirtuals.h"
-#include "exhamples_ch15/headers/VariantReturn.h"
-#include "exhamples_ch15/headers/VirtualDestructors.h"
-#include "exhamples_ch15/headers/OperatorPolymorphism.h"
-#include "exhamples_ch15/headers/DynamicCast.h"
+#include "examples_ch15/headers/Instrument.h"
+#include "examples_ch15/headers/AddingVirtuals.h"
+#include "examples_ch15/headers/VariantReturn.h"
+#include "examples_ch15/headers/VirtualDestructors.h"
+#include "examples_ch15/headers/OperatorPolymorphism.h"
+#include "examples_ch15/headers/DynamicCast.h"
+#include "unit_2_sum_example/headers/ShapesContainer.h"
 
 using namespace std;
 
 int globe = 11;
 
-class Base3 {
-public:
-    virtual ~Base3() {
-        cout << "~Base3\n";
-        f();
-    }
-
-    virtual void f() { cout << "Base3::f()\n"; }
-};
-
-class Derived3 : public Base3 {
-public:
-    ~Derived3() { cout << "~Derived()\n"; }
-
-    void f() { cout << "Derived::f()\n"; }
-};
-
-
 int main(int argc, char* argv[]) {
-    testDynamicCast();
+    testShapesProgram();
+    //    testDynamicCast();
 //    testOperatorPolymorphism();
-    //    Base3* bp = new Derived3; // Upcast
-//    delete bp;
 //    testVirtualDestructors();
     //    testVariantReturn();
 //    Wind flute;
