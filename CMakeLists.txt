@@ -142,5 +142,8 @@ add_executable(cpp_playground main.cpp
         unit_2_sum_example/headers/FilterPerimeter.h
         unit_2_sum_example/ShapesContainer.cpp
         unit_2_sum_example/headers/ShapesContainer.h
+        examples_vuls/BaseUser.cpp
+        examples_vuls/Number.cpp
+        examples_vuls/Number.h
 )
 

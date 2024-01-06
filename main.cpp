@@ -40,13 +40,20 @@
 #include "examples_ch15/headers/OperatorPolymorphism.h"
 #include "examples_ch15/headers/DynamicCast.h"
 #include "unit_2_sum_example/headers/ShapesContainer.h"
+#include "examples_vuls/BaseUser.h"
+#include "examples_vuls/Number.h"
+#include <cstring>
+
 
 using namespace std;
 
 int globe = 11;
 
+
 int main(int argc, char* argv[]) {
-    testShapesProgram();
+    testBaseUserClass();
+    // testPrivateHackValue();
+
     //    testDynamicCast();
 //    testOperatorPolymorphism();
 //    testVirtualDestructors();

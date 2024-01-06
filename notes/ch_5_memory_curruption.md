@@ -312,3 +312,71 @@ void copy_from_user(const int* data, size_t items)
     free(mem);
 }
 ```
+
+### C++ vulnerabilities
+
+___
+
+#### Example for gaining access for each password
+
+```c
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+class BaseUser{
+public:
+    virtual void gainAccess(){ cout << "Access gained"<<endl;};
+    virtual void denyAccess(){cout << "Access denied"<<endl;;};
+    void checkAccess(char pw[]){
+        if (strcmp(pw, "abc") == 0){
+            this->gainAccess();
+        }
+        else
+            this->denyAccess();
+    }
+
+};
+
+int main() {
+    BaseUser base;
+    char pw[10];
+    BaseUser *b = &base;
+
+    cout << "Enter password"<<endl;
+    cin.getline(pw, sizeof(pw));
+
+    int * vptrB = (int*) b;
+    *vptrB = *vptrB -8;
+    
+    b->checkAccess(pw);
+
+    
+    return 0;
+}
+```
+
+#### Example for changing private field
+
+```c
+#include <iostream>
+
+class Number{
+private:
+    int value = 0;
+public:
+    int getValue(){return value;};
+};
+
+int main(){
+    Number n;
+    std::cout << n.getValue()<<std::endl;
+    
+    int* ptrN = (int*) &n;
+    *ptrn = 10;
+    
+    std::cout << n.getValue()<<std::endl;
+    
+}
+
+```
