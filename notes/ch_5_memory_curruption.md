@@ -303,11 +303,58 @@ int main()
 ```c
 void copy_from_user(const int* data, size_t items)
 {
-    int* mem = (int*)malloc(items * sizeof(int));
-    
-    for (size_t i = 0; i < items; i++)
+    if (data == NULL || items == 0) {
+        // Handle error: invalid input
+        return;
+    }
+
+    size_t allocSize = items * sizeof(int);
+    if (allocSize / sizeof(int) != items) {
+        // Handle error: integer overflow in allocation size calculation
+        return;
+    }
+
+    int* mem = (int*)malloc(allocSize);
+    if (mem == NULL) {
+        // Handle error: memory allocation failed
+        return;
+    }
+
+    for (size_t i = 0; i < items; i++) {
         mem[i] = data[i];
-    
+    }
+
+    /* do stuff with mem... */
+    free(mem);
+}
+```
+
+// Fix the problems
+
+```c
+void copy_from_user(const int* data, size_t dataSize, size_t items)
+{
+    if (items > dataSize) {
+        // Handle error: trying to copy more items than available
+        return;
+    }
+
+    size_t allocSize = items * sizeof(int);
+    if (allocSize / sizeof(int) != items) {
+        // Handle error: integer overflow in allocation size calculation
+        return;
+    }
+
+    int* mem = (int*)malloc(allocSize);
+    if (mem == NULL) {
+        // Handle error: memory allocation failed
+        return;
+    }
+
+    for (size_t i = 0; i < items; i++) {
+        mem[i] = data[i];
+    }
+
     /* do stuff with mem... */
     free(mem);
 }
@@ -380,3 +427,5 @@ int main(){
 }
 
 ```
+
+
