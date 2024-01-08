@@ -229,7 +229,65 @@ character. So if a string is 1024 characters according to `strlen()`, it actuall
 memory. In the `get_user()` function, if the supplied user string is exactly 1024 characters, `strlen()` returns 1024,
 sizeof() returns 1024, and the length check passes. Therefore, the `strcpy()` function writes 1024 bytes of string data
 plus the trailing NUL character, causing one byte too many to be written into `buf`.
-Y
+
+#### What Data Can Be Used to Corrupt Memory?
+
+Some memory corruption vulnerabilities don't allow direct control of the data used to overwrite memory. The data might
+be restricted based on how it's used, as with character restrictions, single-byte overwrites, or attacker-malleable
+calls to `memset()`.
+
+```c
+Indirect Memory Corruption
+
+int process_string(char* string){
+    char **tokens, *ptr;
+    int tokencount;
+    
+    tokens = (char **)calloc(64, sizeof(char*));
+    if(!tokens)
+        return -1;
+    
+    for (ptr = string; *ptr){
+        int c;
+        for (end = ptr; *end && !isspace(end); end++);
+        
+        c = *end;
+        *end = '\0';
+        
+        tokens[tokencount++] = ptr; // buffer overflow here
+        ptr = (c == 0 ? end : end + 1);
+    }
+}
+```
+
+#### Off-by-one Overwrite
+
+```c
+struct session {
+    int sequence;
+    int mac[MAX_MAC];
+    char *key;
+};
+
+int delete_session(struct session *session){
+    memset(session->key, 0, KEY_SIZE);
+    free(session->key);
+    free(session);
+}
+
+int get_mac(int fd, struct session *session){
+    unsigned int i, n;
+    n = read_network_integer(fd);
+    
+    if(n > MAX_MAC)
+        return -1;
+    
+    for(i = 0; i <=n; i++)
+        session->mac[i] = read_network_integer(fd);
+    
+    return 0;
+}
+```
 
 #### Off-by-one ex. (Stack Overflow)
 
