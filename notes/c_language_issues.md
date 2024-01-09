@@ -111,3 +111,56 @@ The vulnerability is that if users supply a length less than `sizeof(struct head
 of`(length - sizeof(struct header))` causes an integer underflow and ends up passing a very large size parameter
 to `full_read()`. This error could result in a buffer overflow because at that point, `read()` would essentially copy
 data into the buffer until the connection is closed, which would allow attackers to take control of the process.
+
+#### Signed Integer Vulnerability Example
+
+```c
+char *read_data(int sockfd)
+{
+    char *buf;
+    int length = network_get_int(sockfd);
+    
+    if(!(buf = (char*)malloc(MAXCHARS)))
+        die("malloc: %m");
+    
+    if(length < 0 || length + 1 >= MAXCHARS){
+        free(buf);
+        die("bad length: %d", value);
+    }
+    
+    if(read(sockfd, buf, length) <= 0){
+        free(buf);
+        die("read: %m");
+    }
+    
+    buf[value] = '\0';
+    return buf;
+}
+```
+
+This example reads an integer from the network and performs some sanity checks on it. First, the length is checked to
+ensure that it's greater than or equals to zero and, therefore, positive. Then the length is checked to ensure that it's
+less than `MAXCHARS`. However, in the second part of the length check, 1 is added to the length. This opens an attack
+vector: A value of `0x7FFFFFFF` passes the first check (because it's greater than 0) and passes the second length
+check (as `0x7FFFFFFFF` + 1 is `0x80000000`, which is negative value). `read()` would then be called with an effectively
+unbounded length argument, leading to a potential buffer overflow situation. This kind of mistake is easy to make when
+dealing with signed integers, and it can be equally challenging to spot.
+
+### Types Conversions
+
+___
+
+#### Integer Type Conversion
+
+Here are some practical rules of thumb for integer type conversions:
+
+* When you convert from narrower signed type to a wider unsigned type, the compiler emits assembly to do sign extension,
+  and the value of the object might change.
+* When you convert from a narrower signed type to a wider signed type, the compiler emits assembly to do sign extension,
+  and the value of the object is preserved.
+* When you convert from a narrower unsigned type to a wider type, the compiler emits assembly to do zero extension, and
+  the value of the object is preserved.
+* When you convert from a wider type to a narrower type, the compiler emits assembly to do truncation, and the value of
+  the object might change.
+* When you convert between signed and unsigned types of the same width, the compiler effectively does nothing, the bit
+  pattern stays the same, and the value of the object might change.
