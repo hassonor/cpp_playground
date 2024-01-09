@@ -51,7 +51,7 @@ int globe = 11;
 
 
 int main(int argc, char* argv[]) {
-    testBaseUserClass();
+//    testBaseUserClass();
     // testPrivateHackValue();
 
     //    testDynamicCast();
