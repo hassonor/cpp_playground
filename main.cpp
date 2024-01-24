@@ -43,6 +43,7 @@
 #include "examples_vuls/BaseUser.h"
 #include "examples_vuls/Number.h"
 #include "unit_5_examples/headers/socketDemo.h"
+#include "unit_5_examples/headers/boostDemo.h"
 #include <cstring>
 
 
@@ -204,7 +205,8 @@ int main(int argc, char *argv[]) {
 //    testFNameClass();
 //    testByte2();
 //    testCCUpCastingDemo();
-    createClientSocketDemo();
+//    createClientSocketDemo();
+    testClientBoostAsio();
 }
 
 

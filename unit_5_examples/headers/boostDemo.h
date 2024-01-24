@@ -6,9 +6,9 @@
 #define CPP_PLAYGROUND_BOOSTDEMO_H
 
 
-class boostDemo {
+void testClientBoostAsio();
 
-};
+void testServerBoostAsio();
 
 
 #endif //CPP_PLAYGROUND_BOOSTDEMO_H
