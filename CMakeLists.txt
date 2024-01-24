@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.26)
 project(cpp_playground)
 
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+# Find Boost
+find_package(Boost 1.75.0 REQUIRED COMPONENTS system filesystem) # specify the required components
+
 
 add_executable(cpp_playground main.cpp
         examples_ch2/Stack.cpp
@@ -145,7 +150,10 @@ add_executable(cpp_playground main.cpp
         examples_vuls/BaseUser.cpp
         examples_vuls/Number.cpp
         examples_vuls/Number.h
-        unit_5_examples/headers/socketDemo.cpp
+        unit_5_examples/socketDemo.cpp
         unit_5_examples/headers/socketDemo.h
+        unit_5_examples/boostDemo.cpp
 )
 
+# Link Boost libraries
+target_link_libraries(cpp_playground Boost::system Boost::filesystem)
