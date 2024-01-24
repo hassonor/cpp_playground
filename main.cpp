@@ -42,6 +42,7 @@
 #include "unit_2_sum_example/headers/ShapesContainer.h"
 #include "examples_vuls/BaseUser.h"
 #include "examples_vuls/Number.h"
+#include "unit_5_examples/headers/socketDemo.h"
 #include <cstring>
 
 
@@ -50,7 +51,7 @@ using namespace std;
 int globe = 11;
 
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
 //    testBaseUserClass();
     // testPrivateHackValue();
 
@@ -203,6 +204,7 @@ int main(int argc, char* argv[]) {
 //    testFNameClass();
 //    testByte2();
 //    testCCUpCastingDemo();
+    createClientSocketDemo();
 }
 
 

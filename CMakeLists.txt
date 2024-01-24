@@ -145,5 +145,7 @@ add_executable(cpp_playground main.cpp
         examples_vuls/BaseUser.cpp
         examples_vuls/Number.cpp
         examples_vuls/Number.h
+        unit_5_examples/headers/socketDemo.cpp
+        unit_5_examples/headers/socketDemo.h
 )
 
