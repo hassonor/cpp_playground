@@ -54,7 +54,7 @@ using namespace std;
 int globe = 11;
 
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
 //    testBaseUserClass();
     // testPrivateHackValue();
 
@@ -210,7 +210,19 @@ int main(int argc, char *argv[]) {
 //    createClientSocketDemo();
 //    testClientBoostAsio();
 //    socketBoostClientDemoRun(argc, argv);
-    socketBoostServerDemoRun(argc, argv);
+
+
+    // Server setup with hardcoded port
+    const char* serverArgv[] = {"cpp_playground", "1234"}; // Server port 1234
+    int serverArgc = sizeof(serverArgv) / sizeof(char*);
+    socketBoostServerDemoRun(serverArgc, const_cast<char**>(serverArgv));
+
+    // Client setup with hardcoded server IP and port
+    const char* clientArgv[] = {"cpp_playground", "127.0.0.1", "1234"}; // Server IP 127.0.0.1, Server port 1234
+    int clientArgc = sizeof(clientArgv) / sizeof(char*);
+    socketBoostClientDemoRun(clientArgc, const_cast<char**>(clientArgv));
+
+
 }
 
 
