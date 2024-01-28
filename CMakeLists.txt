@@ -153,6 +153,10 @@ add_executable(cpp_playground main.cpp
         unit_5_examples/socketDemo.cpp
         unit_5_examples/headers/socketDemo.h
         unit_5_examples/boostDemo.cpp
+        unit_5_examples/SocketBoostClientDemo.cpp
+        unit_5_examples/headers/SocketBoostClientDemo.h
+        unit_5_examples/SocketBoostServerDemo.cpp
+        unit_5_examples/headers/SocketBoostServerDemo.h
 )
 
 # Link Boost libraries
