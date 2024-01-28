@@ -44,6 +44,8 @@
 #include "examples_vuls/Number.h"
 #include "unit_5_examples/headers/socketDemo.h"
 #include "unit_5_examples/headers/boostDemo.h"
+#include "unit_5_examples/headers/SocketBoostClientDemo.h"
+#include "unit_5_examples/headers/SocketBoostServerDemo.h"
 #include <cstring>
 
 
@@ -206,7 +208,9 @@ int main(int argc, char *argv[]) {
 //    testByte2();
 //    testCCUpCastingDemo();
 //    createClientSocketDemo();
-    testClientBoostAsio();
+//    testClientBoostAsio();
+//    socketBoostClientDemoRun(argc, argv);
+    socketBoostServerDemoRun(argc, argv);
 }
 
 

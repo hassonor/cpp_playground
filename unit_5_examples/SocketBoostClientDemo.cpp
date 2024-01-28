@@ -10,12 +10,12 @@
 
 using boost::asio::ip::tcp;
 
-void clear(char message[], int length) {
+void clearSocketClient(char message[], int length) {
     for (int i = 0; i < length; i++)
         message[i] = '\0';
 }
 
-int socketBoostClientDemoRun(int argc, char* argv[]) {
+int socketBoostClientDemoRun(int argc, char *argv[]) {
     const int max_length = 1024;
     try {
         if (argc != 3) {
@@ -32,7 +32,7 @@ int socketBoostClientDemoRun(int argc, char* argv[]) {
         for (;;) {
             std::cout << "Enter message: ";
             char request[max_length];
-            clear(request, max_length);
+            clearSocketClient(request, max_length);
             std::cin.getline(request, max_length);
             boost::asio::write(s, boost::asio::buffer(request, max_length));
 
@@ -42,7 +42,7 @@ int socketBoostClientDemoRun(int argc, char* argv[]) {
         }
 
     }
-    catch (std::exception& e) {
+    catch (std::exception &e) {
         std::cerr << "Exception: " << e.what() << "\n";
     }
 }
