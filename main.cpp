@@ -46,6 +46,7 @@
 #include "unit_5_examples/headers/boostDemo.h"
 #include "unit_5_examples/headers/SocketBoostClientDemo.h"
 #include "unit_5_examples/headers/SocketBoostServerDemo.h"
+#include "boost_asio_demos/asio_ex1.h"
 #include <cstring>
 
 
@@ -54,7 +55,7 @@ using namespace std;
 int globe = 11;
 
 
-int main(int argc, char* argv[]) {
+int main(int argc, char *argv[]) {
 //    testBaseUserClass();
     // testPrivateHackValue();
 
@@ -213,14 +214,17 @@ int main(int argc, char* argv[]) {
 
 
     // Server setup with hardcoded port
-    const char* serverArgv[] = {"cpp_playground", "1234"}; // Server port 1234
-    int serverArgc = sizeof(serverArgv) / sizeof(char*);
-    socketBoostServerDemoRun(serverArgc, const_cast<char**>(serverArgv));
+//    const char *serverArgv[] = {"cpp_playground", "1234"}; // Server port 1234
+//    int serverArgc = sizeof(serverArgv) / sizeof(char *);
+////    socketBoostServerDemoRun(serverArgc, const_cast<char**>(serverArgv));
 
     // Client setup with hardcoded server IP and port
-    const char* clientArgv[] = {"cpp_playground", "127.0.0.1", "1234"}; // Server IP 127.0.0.1, Server port 1234
-    int clientArgc = sizeof(clientArgv) / sizeof(char*);
-    socketBoostClientDemoRun(clientArgc, const_cast<char**>(clientArgv));
+//    const char *clientArgv[] = {"cpp_playground", "127.0.0.1", "65431"}; // Server IP 127.0.0.1, Server port 1234
+//    int clientArgc = sizeof(clientArgv) / sizeof(char *);
+//    socketBoostClientDemoRun(clientArgc, const_cast<char **>(clientArgv));
+
+
+    runAsioExample1();
 
 
 }

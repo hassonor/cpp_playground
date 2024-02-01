@@ -157,6 +157,8 @@ add_executable(cpp_playground main.cpp
         unit_5_examples/headers/SocketBoostClientDemo.h
         unit_5_examples/SocketBoostServerDemo.cpp
         unit_5_examples/headers/SocketBoostServerDemo.h
+        boost_asio_demos/asio_ex1.cpp
+        boost_asio_demos/asio_ex1.h
 )
 
 # Link Boost libraries
