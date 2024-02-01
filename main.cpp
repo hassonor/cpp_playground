@@ -1,10 +1,4 @@
-#include "examples_ch2/headers/Stack.h"
-#include "examples_ch2/headers/Point.h"
-#include "examples_ch2/headers/StreamExamples.h"
-#include "examples_ch2/headers/ConcatExample.h"
-#include "examples_ch2/headers/HelloStrings.h"
-#include "examples_ch2/headers/Vector.h"
-#include "examples_ch2/headers/Ch2Solutions.h"
+
 #include "examples_ch3/headers/ch3Examples.h"
 #include "examples_ch3/headers/PointersAndReferences.h"
 #include "examples_ch3/headers/BitwiseOperators.h"
@@ -46,7 +40,7 @@
 #include "unit_5_examples/headers/boostDemo.h"
 #include "unit_5_examples/headers/SocketBoostClientDemo.h"
 #include "unit_5_examples/headers/SocketBoostServerDemo.h"
-#include "boost_asio_demos/asio_ex1.h"
+#include "boost_asio_demos/headers/asio_ex1.h"
 #include <cstring>
 
 
