@@ -2,7 +2,7 @@
 // Created by Or Hasson on 01/02/2024.
 //
 
-#include "headers/asio_ex1.h"
+#include "headers/asio_example.h"
 #include <iostream>
 #include <boost/asio.hpp>
 #include <boost/asio/ts/buffer.hpp>
@@ -64,7 +64,7 @@ void runAsioExample1() {
 
         // Program does something else, while asio handles data transfer in background
         using namespace std::chrono_literals;
-        std::this_thread::sleep_for(20000ms);
+        std::this_thread::sleep_for(3000ms);
 
         context.stop();
         if (thrContext.joinable()) thrContext.join();
