@@ -106,7 +106,14 @@ add_executable(cpp_playground main.cpp
         unit_5_examples/headers/SocketBoostServerDemo.h
         boost_asio_demos/asio_example.cpp
         boost_asio_demos/headers/asio_example.h
+        notes/server_winsock.cpp
+        notes/server_winsock.h
 )
 
 # Link Boost libraries
 target_link_libraries(cpp_playground Boost::system Boost::filesystem)
+
+# Conditionally link against ws2_32 on Windows
+if (WIN32)
+    target_link_libraries(cpp_playground PRIVATE ws2_32)
+endif ()
