@@ -1,10 +1,6 @@
 
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
-#include "TICPP_vol1/examples_ch6/headers/Tree.h"
-#include "TICPP_vol1/examples_ch6/headers/Stash2.h"
-#include "TICPP_vol1/examples_ch6/headers/Stack3.h"
-#include "TICPP_vol1/examples_ch6/headers/MultiArg.h"
 #include "TICPP_vol1/examples_ch11/headers/FreeStandingReferences.h"
 #include "TICPP_vol1/examples_ch11/headers/ReferenceToPointer.h"
 #include "TICPP_vol1/examples_ch11/headers/HowMany2.h"
@@ -38,7 +34,7 @@ using namespace std;
 int globe = 11;
 
 
-int main(int argc, char *argv[]) {
+int main(int argc, char* argv[]) {
 //    testBaseUserClass();
     // testPrivateHackValue();
 

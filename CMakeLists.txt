@@ -15,15 +15,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch5/StackImpArray.cpp
         TICPP_vol1/examples_ch5/StackImpVector.cpp
         TICPP_vol1/examples_ch5/headers/StackOfInt.h
-        TICPP_vol1/examples_ch6/Tree.cpp
-        TICPP_vol1/examples_ch6/headers/Tree.h
-        TICPP_vol1/examples_ch6/Stash2.cpp
-        TICPP_vol1/examples_ch6/headers/Stash2.h
-        TICPP_vol1/examples_ch6/Stack3.cpp
-        TICPP_vol1/examples_ch6/headers/Stack3.h
-        TICPP_vol1/examples_ch6/MultiArg.cpp
-        TICPP_vol1/examples_ch6/headers/MultiArg.h
-        TICPP_vol1/examples_ch6/AuthDefaultConstructor.cpp
         TICPP_vol1/examples_ch11/FreeStandingReferences.cpp
         TICPP_vol1/examples_ch11/headers/FreeStandingReferences.h
         TICPP_vol1/examples_ch11/Reference.cpp
