@@ -1,12 +1,6 @@
 
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
-#include "TICPP_vol1/examples_ch11/headers/FreeStandingReferences.h"
-#include "TICPP_vol1/examples_ch11/headers/ReferenceToPointer.h"
-#include "TICPP_vol1/examples_ch11/headers/HowMany2.h"
-#include "TICPP_vol1/examples_ch11/headers/DefaultCopyConstructor.h"
-#include "TICPP_vol1/examples_ch11/headers/PointerToMemberData.h"
-#include "TICPP_vol1/examples_ch11/headers/PointerToMemberFunction.h"
 #include "TICPP_vol1/examples_ch14/headers/NameHiding.h"
 #include "TICPP_vol1/examples_ch14/headers/SynthesizeFunctions.h"
 #include "TICPP_vol1/examples_ch14/headers/FName.h"

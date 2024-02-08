@@ -15,22 +15,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch5/StackImpArray.cpp
         TICPP_vol1/examples_ch5/StackImpVector.cpp
         TICPP_vol1/examples_ch5/headers/StackOfInt.h
-        TICPP_vol1/examples_ch11/FreeStandingReferences.cpp
-        TICPP_vol1/examples_ch11/headers/FreeStandingReferences.h
-        TICPP_vol1/examples_ch11/Reference.cpp
-        TICPP_vol1/examples_ch11/headers/Reference.h
-        TICPP_vol1/examples_ch11/ReferenceToPointer.cpp
-        TICPP_vol1/examples_ch11/headers/ReferenceToPointer.h
-        TICPP_vol1/examples_ch11/HowMany2.cpp
-        TICPP_vol1/examples_ch11/headers/HowMany2.h
-        TICPP_vol1/examples_ch11/DefaultCopyConstructor.cpp
-        TICPP_vol1/examples_ch11/headers/DefaultCopyConstructor.h
-        TICPP_vol1/examples_ch11/PointerToMemberData.cpp
-        TICPP_vol1/examples_ch11/headers/PointerToMemberData.h
-        TICPP_vol1/examples_ch11/PointerToMemberFunction.cpp
-        TICPP_vol1/examples_ch11/headers/PointerToMemberFunction.h
-        TICPP_vol1/examples_ch11/PointerToMemberFunction2.cpp
-        TICPP_vol1/examples_ch11/headers/PointerToMemberFunction2.h
         TICPP_vol1/examples_ch13/MallocClass.cpp
         TICPP_vol1/examples_ch13/headers/MallocClass.h
         TICPP_vol1/examples_ch13/PStash.cpp
