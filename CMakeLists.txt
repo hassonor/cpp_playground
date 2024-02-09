@@ -15,10 +15,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch5/StackImpArray.cpp
         TICPP_vol1/examples_ch5/StackImpVector.cpp
         TICPP_vol1/examples_ch5/headers/StackOfInt.h
-        TICPP_vol1/examples_ch13/MallocClass.cpp
-        TICPP_vol1/examples_ch13/headers/MallocClass.h
-        TICPP_vol1/examples_ch13/PStash.cpp
-        TICPP_vol1/examples_ch13/headers/PStash.h
         TICPP_vol1/examples_ch14/NameHiding.cpp
         TICPP_vol1/examples_ch14/headers/NameHiding.h
         TICPP_vol1/examples_ch14/SynthesizeFunctions.cpp
