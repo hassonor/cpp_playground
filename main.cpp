@@ -1,7 +1,6 @@
 
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
-#include "TICPP_vol1/examples_ch14/headers/NameHiding.h"
 #include "TICPP_vol1/examples_ch14/headers/SynthesizeFunctions.h"
 #include "TICPP_vol1/examples_ch14/headers/FName.h"
 #include "TICPP_vol1/examples_ch14/headers/OperatorInheritance.h"
