@@ -19,8 +19,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch14/headers/Car.h
         TICPP_vol1/examples_ch14/ProtectedExample.cpp
         TICPP_vol1/examples_ch14/headers/ProtectedExample.h
-        TICPP_vol1/examples_ch14/Byte.cpp
-        TICPP_vol1/examples_ch14/headers/Byte.h
         TICPP_vol1/examples_ch14/OperatorInheritance.cpp
         TICPP_vol1/examples_ch14/headers/OperatorInheritance.h
         TICPP_vol1/examples_ch14/CopyConstructorUpCastingDemo.cpp
