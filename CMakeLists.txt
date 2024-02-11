@@ -17,10 +17,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch5/headers/StackOfInt.h
         TICPP_vol1/examples_ch14/Car.cpp
         TICPP_vol1/examples_ch14/headers/Car.h
-        TICPP_vol1/examples_ch14/FName.cpp
-        TICPP_vol1/examples_ch14/headers/FName.h
-        TICPP_vol1/examples_ch14/PrivateInheritance.cpp
-        TICPP_vol1/examples_ch14/headers/PrivateInheritance.h
         TICPP_vol1/examples_ch14/ProtectedExample.cpp
         TICPP_vol1/examples_ch14/headers/ProtectedExample.h
         TICPP_vol1/examples_ch14/Byte.cpp
