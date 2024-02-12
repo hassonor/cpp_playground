@@ -15,8 +15,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch5/StackImpArray.cpp
         TICPP_vol1/examples_ch5/StackImpVector.cpp
         TICPP_vol1/examples_ch5/headers/StackOfInt.h
-        TICPP_vol1/examples_ch14/CopyConstructorUpCastingDemo.cpp
-        TICPP_vol1/examples_ch14/headers/CopyConstructorUpCastingDemo.h
         TICPP_vol1/examples_ch15/Instrument.cpp
         TICPP_vol1/examples_ch15/headers/Instrument.h
         TICPP_vol1/examples_ch15/AddingVirtuals.cpp

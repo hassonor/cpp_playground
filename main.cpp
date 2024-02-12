@@ -1,7 +1,6 @@
 
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
-#include "TICPP_vol1/examples_ch14/headers/CopyConstructorUpCastingDemo.h"
 #include "TICPP_vol1/examples_ch15/headers/Instrument.h"
 #include "TICPP_vol1/examples_ch15/headers/AddingVirtuals.h"
 #include "TICPP_vol1/examples_ch15/headers/VariantReturn.h"
