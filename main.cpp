@@ -1,9 +1,6 @@
 
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
-#include "TICPP_vol1/examples_ch15/headers/AddingVirtuals.h"
-#include "TICPP_vol1/examples_ch15/headers/VariantReturn.h"
-#include "TICPP_vol1/examples_ch15/headers/VirtualDestructors.h"
 #include "TICPP_vol1/examples_ch15/headers/OperatorPolymorphism.h"
 #include "TICPP_vol1/examples_ch15/headers/DynamicCast.h"
 #include "unit_2_sum_example/headers/ShapesContainer.h"
@@ -18,8 +15,6 @@
 
 
 using namespace std;
-
-int globe = 11;
 
 
 int main(int argc, char* argv[]) {

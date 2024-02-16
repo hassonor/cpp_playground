@@ -15,14 +15,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch5/StackImpArray.cpp
         TICPP_vol1/examples_ch5/StackImpVector.cpp
         TICPP_vol1/examples_ch5/headers/StackOfInt.h
-        TICPP_vol1/examples_ch15/AddingVirtuals.cpp
-        TICPP_vol1/examples_ch15/headers/AddingVirtuals.h
-        TICPP_vol1/examples_ch15/NameHiding2.cpp
-        TICPP_vol1/examples_ch15/headers/NameHiding2.h
-        TICPP_vol1/examples_ch15/VariantReturn.cpp
-        TICPP_vol1/examples_ch15/headers/VariantReturn.h
-        TICPP_vol1/examples_ch15/VirtualDestructors.cpp
-        TICPP_vol1/examples_ch15/headers/VirtualDestructors.h
         TICPP_vol1/examples_ch15/OStack.cpp
         TICPP_vol1/examples_ch15/headers/OStack.h
         TICPP_vol1/examples_ch15/OperatorPolymorphism.cpp
