@@ -15,10 +15,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch5/StackImpArray.cpp
         TICPP_vol1/examples_ch5/StackImpVector.cpp
         TICPP_vol1/examples_ch5/headers/StackOfInt.h
-        TICPP_vol1/examples_ch15/OperatorPolymorphism.cpp
-        TICPP_vol1/examples_ch15/headers/OperatorPolymorphism.h
-        TICPP_vol1/examples_ch15/DynamicCast.cpp
-        TICPP_vol1/examples_ch15/headers/DynamicCast.h
         TICPP_vol1/examples_ch15/StaticHierarchyNavigation.cpp
         TICPP_vol1/examples_ch15/headers/StaticHierarchyNavigation.h
         unit_2_sum_example/Point2.cpp

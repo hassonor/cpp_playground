@@ -1,8 +1,6 @@
 
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
 #include "TICPP_vol1/examples_ch5/headers/StackOfInt.h"
-#include "TICPP_vol1/examples_ch15/headers/OperatorPolymorphism.h"
-#include "TICPP_vol1/examples_ch15/headers/DynamicCast.h"
 #include "unit_2_sum_example/headers/ShapesContainer.h"
 #include "examples_vuls/BaseUser.h"
 #include "examples_vuls/Number.h"
