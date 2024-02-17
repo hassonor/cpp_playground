@@ -15,8 +15,6 @@ add_executable(cpp_playground main.cpp
         TICPP_vol1/examples_ch5/StackImpArray.cpp
         TICPP_vol1/examples_ch5/StackImpVector.cpp
         TICPP_vol1/examples_ch5/headers/StackOfInt.h
-        TICPP_vol1/examples_ch15/OStack.cpp
-        TICPP_vol1/examples_ch15/headers/OStack.h
         TICPP_vol1/examples_ch15/OperatorPolymorphism.cpp
         TICPP_vol1/examples_ch15/headers/OperatorPolymorphism.h
         TICPP_vol1/examples_ch15/DynamicCast.cpp
