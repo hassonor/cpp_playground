@@ -9,14 +9,12 @@ find_package(Boost 1.75.0 REQUIRED COMPONENTS system filesystem) # specify the r
 
 
 add_executable(cpp_playground main.cpp
-        TICPP_vol1/examples_ch5/headers/StashV2.h
-        TICPP_vol1/examples_ch5/StackV2.cpp
-        TICPP_vol1/examples_ch5/headers/StackV2.h
-        TICPP_vol1/examples_ch5/StackImpArray.cpp
-        TICPP_vol1/examples_ch5/StackImpVector.cpp
-        TICPP_vol1/examples_ch5/headers/StackOfInt.h
-        TICPP_vol1/examples_ch15/StaticHierarchyNavigation.cpp
-        TICPP_vol1/examples_ch15/headers/StaticHierarchyNavigation.h
+        notes/TICPP_vol1/examples_ch5/headers/StashV2.h
+        notes/TICPP_vol1/examples_ch5/StackV2.cpp
+        notes/TICPP_vol1/examples_ch5/headers/StackV2.h
+        notes/TICPP_vol1/examples_ch5/StackImpArray.cpp
+        notes/TICPP_vol1/examples_ch5/StackImpVector.cpp
+        notes/TICPP_vol1/examples_ch5/headers/StackOfInt.h
         unit_2_sum_example/Point2.cpp
         unit_2_sum_example/headers/Point2.h
         unit_2_sum_example/Line2.cpp
